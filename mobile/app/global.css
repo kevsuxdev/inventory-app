@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-field {
+  @apply text-black border border-black rounded-lg px-2 w-full font-poppins;
+}
+
+.default-button {
+  @apply rounded-lg p-3 bg-accent items-center justify-center w-full;
+}
+.default-button-text {
+  @apply text-white text-center text-lg font-poppins-bold tracking-wide;
+}

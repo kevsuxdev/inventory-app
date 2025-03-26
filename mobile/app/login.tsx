@@ -13,9 +13,8 @@ import TextField from '@/components/TextField'
 import PasswordField from '@/components/PasswordField'
 import DefaultButton from '@/components/DefaultButton'
 import Separator from '@/components/Separator'
-import { Link, RelativePathString, useRouter } from 'expo-router'
+import { Link, useRouter } from 'expo-router'
 import { LoginUser } from '@/types/Form'
-import { users } from '@/constant/data'
 
 const LoginScreen = () => {
   const router = useRouter()
@@ -25,17 +24,7 @@ const LoginScreen = () => {
   })
 
   const handleLogin = () => {
-    if (loginForm.email.trim() === '' || loginForm.password.trim() === '') {
-      return console.log('Please complete the form.')
-    }
-
-    users.map((user) => {
-      if(user.email === loginForm.email && user.password === loginForm.password) {
-        return router.replace('/dashboard' as RelativePathString)
-      }
-    })
-
-    return console.log('No user found.')
+    router.push('/dashboard')
   }
 
   return (

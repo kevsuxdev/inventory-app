@@ -111,3 +111,61 @@ export const users = [
   },
 ]
 
+export const inventoryData = [
+  {
+    id: 'log_001',
+    timestamp: '2025-03-27T10:30:00Z',
+    user: {
+      id: 'user_123',
+      name: 'John Doe',
+      role: 'Admin',
+    },
+    action: 'Add',
+    details: {
+      product_id: 'prod_567',
+      product_name: 'Wireless Mouse',
+      category: 'Electronics',
+      quantity_added: 50,
+      current_stock: 150,
+      product_image:
+        'https://placehold.co/600x400/000000/FFFFFF/png?text=Wireless+Mouse',
+    },
+  },
+  {
+    id: 'log_002',
+    timestamp: '2025-03-27T11:00:00Z',
+    user: {
+      id: 'user_456',
+      name: 'Jane Smith',
+      role: 'Manager',
+    },
+    action: 'Updated',
+    details: {
+      product_id: 'prod_890',
+      product_name: 'Office Chair',
+      previous_stock: 20,
+      new_stock: 35,
+      product_image:
+        'https://placehold.co/600x400/000000/FFFFFF/png?text=Office+Chair',
+    },
+  },
+  {
+    id: 'log_003',
+    timestamp: '2025-03-27T11:45:00Z',
+    user: {
+      id: 'user_789',
+      name: 'Emily Johnson',
+      role: 'Employee',
+    },
+    action: 'Add',
+    details: {
+      product_id: 'prod_234',
+      product_name: 'USB-C Cable',
+      category: 'Electronics',
+      quantity_added: 50,
+      current_stock: 150,
+      product_image:
+        'https://placehold.co/600x400/000000/FFFFFF/png?text=USB-C+Cable',
+    },
+  },
+]
